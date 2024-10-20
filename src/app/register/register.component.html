@@ -1,1 +1,54 @@
-<p>register works!</p>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Monitoring - Registration</title>-->
+    <link rel="stylesheet" href="register.component.css">
+
+    <!-- <div class="background-image"> -->
+       <!-- > <img src="app/register/images/disaster.jpg" alt="" class="bg-img" Background image -->
+  
+        <!-- <img src="app/image/wel.webp" alt="" class="background-image"> -->
+
+        <div class="background-image"></div> 
+
+    <div class="container">
+        <h1>Registration for Disaster Monitoring and Alerts</h1>
+        <form action="/submit_registration" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="disasterType">Preferred Disaster Alerts:</label>
+            <select id="disasterType" name="disasterType">
+                <option value="earthquake">Earthquake</option>
+                <option value="flood">Flood</option>
+                <option value="cyclone">Cyclone</option>
+                <option value="wildfire">Wildfire</option>
+            </select>
+
+            <input type="submit" value="Register">
+
+
+           
+
+
+            <!-- <button onclick="location.href='login.html'">Submit</button> -->
+            <!-- Anchor tag styled as a button -->
+            <!-- <a href="thankyou.html" class="submit-button">Register</a> -->
+
+
+
+            
+        </form>
+    </div>
+ 
