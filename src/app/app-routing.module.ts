@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { Page1Component } from './page1/page1.component';
+import { Page2Component } from './page2/page2.component';
 
 export const routes: Routes = [
   { 
@@ -13,6 +15,12 @@ export const routes: Routes = [
 },
 { 
     path: 'login', component: LoginComponent,
+},
+{ 
+  path: 'page1', component: Page1Component,
+},
+{ 
+  path: 'page2', component: Page2Component,
 },
   // { path: 'page2', component: Page2Component,
   //   children:[
