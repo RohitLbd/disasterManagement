@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
+import { GuiComponent } from './page2/gui/gui.component';
 
 export const routes: Routes = [
   { 
@@ -21,6 +22,9 @@ export const routes: Routes = [
 },
 { 
   path: 'page2', component: Page2Component,
+},
+{ 
+  path: 'gui', component: GuiComponent
 },
   // { path: 'page2', component: Page2Component,
   //   children:[
