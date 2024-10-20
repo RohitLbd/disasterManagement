@@ -15,6 +15,7 @@ import {
   ApexLegend,
   NgApexchartsModule
 } from "ng-apexcharts";
+import { NavbarComponent } from '../../navbar/navbar.component';
 
 // Define correct type for ChartOptions
 export type ChartOptions = {
@@ -56,7 +57,7 @@ export type HurricaneChartOptions = {
 @Component({
   selector: 'app-gui',
   standalone: true,
-  imports: [NgApexchartsModule, CommonModule], // Add CommonModule to imports
+  imports: [NgApexchartsModule, CommonModule,NavbarComponent], // Add CommonModule to imports
   templateUrl: './gui.component.html',
   styleUrls: ['./gui.component.css']
 })
