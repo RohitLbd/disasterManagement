@@ -1,0 +1,21 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Ensure sufficient height for the map */
+}
+
+.india-map {
+  width: 100%;
+  height: 100%; /* Make sure the map fills the container */
+}
+
+.tooltip {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
