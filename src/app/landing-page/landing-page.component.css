@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+    .hero {
+    /* background: url('disaster_bg.jpg') no-repeat center center/cover;*/
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+} 
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Disaster Section */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.disaster-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.disaster-item {
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.disaster-item:hover {
+    transform: scale(1.05);
+}
+
+.disaster-item img {
+    width: 100%;
+    height: auto;
+}
+
+.disaster-item h3 {
+    margin-top: 10px;
+}
+
+/* Alerts Section */
+.alert-box {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
