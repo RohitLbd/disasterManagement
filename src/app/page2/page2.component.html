@@ -1,4 +1,5 @@
-<p>page2 works!</p>
+
+<!-- <p>page2 works!</p>
 <div (click)="gui('Earthquake')">
     Earthquake
 </div>
@@ -6,8 +7,39 @@
     Flood
 </div>
 <div (click)="gui('Hurricane')">
-    Hurricane
+    Hurricane -->
+
+
+    <link rel="stylesheet" href="page2.component.css"> 
+
+<p>page2 works!</p>
+
+<div class="card-container">
+    <!-- Earthquake Card -->
+    <div class="card" (click)="gui('Earthquake')" style="background-image: url('earthquake.jpg');">
+
+        <!-- <div class="card-image" style="background-image: url('assets/earth2.jpg');"></div> -->
+
+        <div class="card-image" style="background-image: url('assets/earth2.jpg');"></div>
+
+         <!--  <img src="image/Manali.jpg" alt="My Image" width="500"> -->
+        <div class="card-content">
+            <h2>Earthquake</h2>
+        </div>
+    </div>
+
+    <!-- Flood Card -->
+    <div class="card" (click)="gui('Flood')" style="background-image: url('flood.jpg');">
+        <div class="card-content">
+            <h2>Flood</h2>
+        </div>
+    </div>
+
+    <!-- Hurricane Card -->
+    <div class="card" (click)="gui('Hurricane')" style="background-image: url('hurricane.jpg');">
+        <div class="card-content">
+            <h2>Hurricane</h2>
+        </div>
+    </div>
 </div>
-
-
 
