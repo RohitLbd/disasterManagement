@@ -1,0 +1,76 @@
+<p>gui works!</p>
+
+<!-- Display disaster data if applicable -->
+<div *ngIf="Earthquake">
+  Earthquake
+</div>
+<div *ngIf="Flood">
+  Flood
+</div>
+<div *ngIf="Hurricane">
+  Hurricane
+</div>
+
+<!-- Wrapper for the charts -->
+<div *ngIf="Earthquake" id="wrapper">
+  <!-- Line chart -->
+  <div id="chart-line">
+    <apx-chart
+      [series]="chartOptions1.series"
+      [chart]="chartOptions1.chart"
+      [xaxis]="chartOptions1.xaxis"
+      [dataLabels]="chartOptions1.dataLabels"
+      [colors]="chartOptions1.colors"
+      [fill]="chartOptions1.fill"
+      [markers]="chartOptions1.markers"
+      [stroke]="chartOptions1.stroke"
+    ></apx-chart>
+  </div>
+
+  <!-- Area chart -->
+  <div id="chart-line2">
+    <apx-chart
+      [series]="chartOptions2.series"
+      [chart]="chartOptions2.chart"
+      [xaxis]="chartOptions2.xaxis"
+      [colors]="chartOptions2.colors"
+      [fill]="chartOptions2.fill"
+    ></apx-chart>
+  </div>
+</div>
+
+<!-- Flood chart -->
+<div *ngIf="Flood" id="wrapper">
+  <div id="chart-flood">
+    <apx-chart
+      [series]="chartOptionsFlood.series"
+      [chart]="chartOptionsFlood.chart"
+      [xaxis]="chartOptionsFlood.xaxis"
+      [yaxis]="chartOptionsFlood.yaxis"
+      [stroke]="chartOptionsFlood.stroke"
+      [dataLabels]="chartOptionsFlood.dataLabels"
+      [colors]="chartOptionsFlood.colors"
+      [tooltip]="chartOptionsFlood.tooltip"
+      [legend]="chartOptionsFlood.legend"
+      [markers]="chartOptionsFlood.markers"
+    ></apx-chart>
+  </div>
+</div>
+<div *ngIf="Hurricane" id="wrapper">
+
+<!-- Hurricane chart -->
+<div id="hurricane-chart">
+  <apx-chart
+    [series]="hurricaneChartOptions.series"
+    [chart]="hurricaneChartOptions.chart"
+    [xaxis]="hurricaneChartOptions.xaxis"
+    [yaxis]="hurricaneChartOptions.yaxis"
+    [dataLabels]="hurricaneChartOptions.dataLabels"
+    [colors]="hurricaneChartOptions.colors"
+    [legend]="hurricaneChartOptions.legend"
+    [tooltip]="hurricaneChartOptions.tooltip"
+    [fill]="hurricaneChartOptions.fill"
+  ></apx-chart>
+</div>
+
+</div>
