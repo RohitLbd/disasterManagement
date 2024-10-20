@@ -11,10 +11,11 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     LoginComponent,
     RegisterComponent,
+    
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
   ]
 })
 export class AppModule { }
